@@ -2,69 +2,99 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Acesso Bling - Vi.No.Dash</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+  <title>Vi.No.Dash | Pipeline Bling</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     body {
+      margin: 0;
+      padding: 0;
       font-family: 'Roboto', sans-serif;
-      background-color: #f9f9f9;
-      padding: 40px 20px;
-      max-width: 700px;
-      margin: auto;
-      text-align: left;
-      color: #333;
+      background-color: #14597f;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
     }
 
-    img.logo {
-      width: 180px;
-      display: block;
-      margin-bottom: 30px;
+    .card {
+      background-color: #ffffff;
+      border-radius: 20px;
+      padding: 40px 30px;
+      max-width: 450px;
+      width: 100%;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      text-align: center;
+    }
+
+    .card img {
+      width: 120px;
+      margin-bottom: 20px;
     }
 
     h1 {
-      font-size: 24px;
-      margin-bottom: 20px;
-      font-weight: 600;
+      font-size: 22px;
+      margin-bottom: 10px;
+      color: #222;
     }
 
-    a {
-      display: block;
+    .subtitulo {
       font-size: 18px;
+      margin-bottom: 25px;
+      color: #222;
+    }
+
+    .pipeline {
+      font-size: 20px;
       font-weight: 600;
-      color: #1976d2;
+      color: #1a2a3a;
+      margin-bottom: 35px;
+    }
+
+    .link {
+      display: block;
+      font-size: 17px;
+      font-weight: 600;
       text-decoration: none;
+      color: #000;
       margin-bottom: 20px;
     }
 
-    a:hover {
-      text-decoration: underline;
+    .link span {
+      margin-right: 8px;
+    }
+
+    .link:hover {
+      color: #1976d2;
     }
 
     footer {
       margin-top: 40px;
-      font-size: 14px;
-      color: #777;
-      text-align: center;
+      font-size: 13px;
+      color: #555;
     }
   </style>
 </head>
 <body>
 
-  <img src="logo.png" alt="Logo Vi.No.Dash" class="logo">
+  <div class="card">
+    <img src="logo.png" alt="Vi.No.Dash logo">
 
-  <h1>📊 Acesso Rápido Bling</h1>
+    <h1>Pipeline de Dados</h1>
+    <div class="pipeline">Bling! <span>🔁</span> Google Sheets</div>
 
-  <a href="https://script.google.com/macros/s/AKfycbwJbgJbgClzqSXKkDXm3sLKeD-e8rf_boGtPZYVoJ1xJOur7qcaVnB2wtaPyNHJbfnM3Q/exec" target="_blank">
-    👉 Acessar Painel de Integração
-  </a>
+    <a class="link" href="https://script.google.com/macros/s/AKfycbwJbgJbgClzqSXKkDXm3sLKeD-e8rf_boGtPZYVoJ1xJOur7qcaVnB2wtaPyNHJbfnM3Q/exec" target="_blank">
+      <span>👉</span>Acessar Painel de Integração
+    </a>
 
-  <a href="https://ajuda.bling.com.br/hc/pt-br/articles/4410019842061--API-v3-Vis%C3%A3o-geral" target="_blank">
-    📚 Ver Documentação da API Bling
-  </a>
+    <a class="link" href="https://ajuda.bling.com.br/hc/pt-br/articles/4410019842061--API-v3-Vis%C3%A3o-geral" target="_blank">
+      <span>📝</span>Ver Documentação API
+    </a>
 
-  <footer>
-    Desenvolvido por Vi.No.Dash – contato@vinodash.com.br
-  </footer>
+    <footer>
+      Desenvolvido por Vi.No.Dash®<br>
+      contato@vinodash.com.br
+    </footer>
+  </div>
 
 </body>
 </html>
