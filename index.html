@@ -59,7 +59,7 @@
       background-color: #1976d2;
       padding: 10px 20px;
       border-radius: 8px;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
     }
 
     .link:hover {
@@ -85,10 +85,14 @@
   <div class="card">
     <img src="logo.png" alt="Logo Vi.No.Dash" />
     <h1>Pipeline de Dados</h1>
-    <div class="pipeline">Bling ⏩ Google Sheets</div>
+    <div class="pipeline">Bling >>> Google Sheets</div>
 
     <div id="mensagem-cliente" class="cliente-msg"></div>
     <div id="painel-container"></div>
+
+    <a class="link" href="https://developer.bling.com.br/referencia#/" target="_blank">
+      📝 Ver Documentação API
+    </a>
 
     <footer>
       Desenvolvido por Vi.No.Dash<br />
@@ -102,15 +106,15 @@
         nome: "Saulo Florentino",
         url: "https://script.google.com/macros/s/AKfycbz4xQSLIYysQsZgCmoZVqHkJ9LXiVF6qZmXqfu2HLTX/dev"
       },
-      sauloteste: {
-        nome: "Saulo teste",
+      acme: {
+        nome: "Acme Ltda",
         url: "https://script.google.com/macros/s/AKfycbzxSdLRcQILx_3t3etyOfKncKjVrLWU4PsaFBds662n/dev"
       },
       lojaX: {
         nome: "Loja X",
         url: "https://script.google.com/macros/s/AKfycbLOJAX_WEBAPP/exec"
       }
-      // Adicione novos clientes aqui
+      // Adicione outros clientes aqui
     };
 
     const params = new URLSearchParams(window.location.search);
@@ -119,7 +123,7 @@
     const mensagem = document.getElementById("mensagem-cliente");
 
     if (cliente && clientes[cliente]) {
-      mensagem.innerText = `👋 Olá, ${clientes[cliente].nome}!`;
+      mensagem.innerText = `Olá, ${clientes[cliente].nome}!`;
       container.innerHTML = `
         <a class="link" href="${clientes[cliente].url}" target="_blank">
           👉 Acessar Painel de Integração
@@ -133,10 +137,6 @@
       `;
     }
   </script>
-
-</body>
-</html>
-
 
 </body>
 </html>
